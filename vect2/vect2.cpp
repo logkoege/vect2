@@ -63,6 +63,20 @@ vect2 vect2::operator--(int)
     return(temp);
 }
 
+vect2& vect2::operator++()
+{
+    this->x++;
+    this->y++;
+    return(*this);
+}
+
+vect2& vect2::operator--()
+{
+    this->x--;
+    this->y--;
+    return(*this);
+}
+
 
 
 vect2& vect2::operator*=(const vect2 &other)
